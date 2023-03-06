@@ -70,5 +70,6 @@ struct RecipeFeatureView: View {
 struct RecipeFeatureView_Previews: PreviewProvider {
     static var previews: some View {
         RecipeFeatureView()
+            .environmentObject(RecipeModel())
     }
 }
