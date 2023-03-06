@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC7E024429B658CB0002E642 /* RecipeFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7E024329B658CB0002E642 /* RecipeFeatureView.swift */; };
 		BCBEE44529A7D719001F70DA /* RecipeListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBEE44429A7D719001F70DA /* RecipeListApp.swift */; };
 		BCBEE44729A7D719001F70DA /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBEE44629A7D719001F70DA /* RecipeListView.swift */; };
 		BCBEE44929A7D71A001F70DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCBEE44829A7D71A001F70DA /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC7E024329B658CB0002E642 /* RecipeFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeatureView.swift; sourceTree = "<group>"; };
 		BCBEE44129A7D719001F70DA /* RecipeListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBEE44429A7D719001F70DA /* RecipeListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListApp.swift; sourceTree = "<group>"; };
 		BCBEE44629A7D719001F70DA /* RecipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListView.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 				BCBEE44629A7D719001F70DA /* RecipeListView.swift */,
 				BCC2678829A7E5F700FDDAF5 /* RecipeDetailView.swift */,
 				BCC267AA29B11B6300FDDAF5 /* RecipeTabView.swift */,
+				BC7E024329B658CB0002E642 /* RecipeFeatureView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCBEE44729A7D719001F70DA /* RecipeListView.swift in Sources */,
+				BC7E024429B658CB0002E642 /* RecipeFeatureView.swift in Sources */,
 				BCC2678929A7E5F700FDDAF5 /* RecipeDetailView.swift in Sources */,
 				BCBEE45C29A7D987001F70DA /* RecipeModel.swift in Sources */,
 				BCBEE45A29A7D8D5001F70DA /* Recipe.swift in Sources */,
