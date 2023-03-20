@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC1D51ED29C7856B005F9340 /* Rational.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1D51EC29C7856B005F9340 /* Rational.swift */; };
 		BC7E024429B658CB0002E642 /* RecipeFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7E024329B658CB0002E642 /* RecipeFeatureView.swift */; };
 		BCBEE44529A7D719001F70DA /* RecipeListApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBEE44429A7D719001F70DA /* RecipeListApp.swift */; };
 		BCBEE44729A7D719001F70DA /* RecipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBEE44629A7D719001F70DA /* RecipeListView.swift */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC1D51EC29C7856B005F9340 /* Rational.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rational.swift; sourceTree = "<group>"; };
 		BC7E024329B658CB0002E642 /* RecipeFeatureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeFeatureView.swift; sourceTree = "<group>"; };
 		BCBEE44129A7D719001F70DA /* RecipeListApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeListApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCBEE44429A7D719001F70DA /* RecipeListApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeListApp.swift; sourceTree = "<group>"; };
@@ -48,6 +50,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BC1D51EB29C7855D005F9340 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BC1D51EC29C7856B005F9340 /* Rational.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		BCBEE43829A7D719001F70DA = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +77,7 @@
 		BCBEE44329A7D719001F70DA /* RecipeListApp */ = {
 			isa = PBXGroup;
 			children = (
+				BC1D51EB29C7855D005F9340 /* Utils */,
 				BCBEE45629A7D73D001F70DA /* Services */,
 				BCBEE45529A7D737001F70DA /* Data */,
 				BCBEE45429A7D731001F70DA /* ViewModels */,
@@ -209,6 +220,7 @@
 				BCBEE45A29A7D8D5001F70DA /* Recipe.swift in Sources */,
 				BCC267AD29B1265700FDDAF5 /* Ingredient.swift in Sources */,
 				BCBEE44529A7D719001F70DA /* RecipeListApp.swift in Sources */,
+				BC1D51ED29C7856B005F9340 /* Rational.swift in Sources */,
 				BCBEE45E29A7DA6A001F70DA /* DataService.swift in Sources */,
 				BCC267AB29B11B6300FDDAF5 /* RecipeTabView.swift in Sources */,
 			);
