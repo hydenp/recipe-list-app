@@ -20,11 +20,18 @@ struct RecipeDetailView: View {
                 Image(recipe.image)
                     .resizable()
                     .scaledToFill()
-                //                .cornerRadius(5)
-                //                .padding(.all)
                 
+                // MARK: Recipe title
+                Text(recipe.name)
+                    .bold()
+                    .padding(.leading, 10)
+                    .padding(.bottom, 5)
+                    .font(.largeTitle)
+                
+                // MARK: serving size picker
                 VStack(alignment: .leading) {
                     Text("Select your serving size")
+                        .padding(0)
                     Picker("", selection: $selectServingSize) {
                         Text("2").tag(2)
                         Text("4").tag(4)
@@ -34,7 +41,7 @@ struct RecipeDetailView: View {
                     .pickerStyle(SegmentedPickerStyle())
                     .frame(width: 160)
                 }
-                .padding()
+                .padding([.bottom, .leading], 10)
                 
                 Divider()
                     .padding(.horizontal)
@@ -44,7 +51,7 @@ struct RecipeDetailView: View {
                     Text("Ingredients").font(.headline)
                     
                     ForEach (recipe.ingredients) { item in
-                        Text("- " + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectServingSize) + " " + item.name)
+                        Text("• " + RecipeModel.getPortion(ingredient: item, recipeServings: recipe.servings, targetServings: selectServingSize) + " " + item.name)
                     }
                 }
                 .padding(.horizontal)
@@ -56,13 +63,12 @@ struct RecipeDetailView: View {
                     Text("Directions").font(.headline)
                     
                     ForEach(0..<recipe.directions.count, id: \.self) {i in
-                        Text(String(i+1) + " " + recipe.directions[i])
+                        Text(String(i+1) + ". " + recipe.directions[i])
                     }
                 }
                 .padding(.horizontal)
             }
         }
-        .navigationBarTitle(recipe.name)
     }
 }
 
